@@ -64,7 +64,7 @@
       zedlmsg = 'Panel' panel 'has' anz 'line in the BODY-Section.'
       Address ISPEXEC "SETMSG MSG(isrz000)"
       "FIND FIRST ')BODY' 1"
-    END
+    End
     /* ---------------------------------------- *
     | If no next panel section report that out |
     * ---------------------------------------- */
@@ -72,8 +72,8 @@
       zedsmsg = 'Error (END missing)'
       zedlmsg = 'No )END-Section found in this panel.'
       Address ISPEXEC "SETMSG MSG(isrz001)"
-    END
-  END
+    End
+  End
   /* ----------------------------------- *
   | If no )Body section report that out |
   * ----------------------------------- */
@@ -81,9 +81,9 @@
     zedsmsg = 'Error (BODY missing)'
     zedlmsg = 'No )BODY-Section found in this panel.'
     Address ISPEXEC "SETMSG MSG(isrz001)"
-  END
+  End
 
-  EXIT
+  Exit
 
   /* -------------------------------- *
   | Get the suggested AddPop setting |
