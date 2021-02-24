@@ -13,7 +13,7 @@
   |                - 7/7/17 change to exclude all non BODY records    |
   * ----------------------------------------------------------------- */
   Address ISREdit
-  "MACRO"
+  "Macro"
 
   /* ---------------------------------------------------- *
   | Find the )BODY statement and extract the Expand info |
