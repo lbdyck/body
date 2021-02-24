@@ -20,9 +20,9 @@
   | and save the 1st record of the body text             |
   * ---------------------------------------------------- */
   'Reset'
-  "FIND FIRST ')BODY' 1"
+  "Find First ')BODY' 1"
   IF rc = 0 THEN DO
-    "(z1) = LINENUM .ZCSR"
+    "(z1) = Linenum .zcsr"
     '(data) = line' z1
     data = translate(data)
     if pos('EXPAND(',data) > 0
